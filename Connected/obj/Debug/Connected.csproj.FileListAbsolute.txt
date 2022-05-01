@@ -1,0 +1,15 @@
+F:\files\sw\Connected\Connected\bin\Debug\Connected.exe.config
+F:\files\sw\Connected\Connected\bin\Debug\Connected.exe
+F:\files\sw\Connected\Connected\bin\Debug\Connected.pdb
+F:\files\sw\Connected\Connected\bin\Debug\Oracle.DataAccess.dll
+F:\files\sw\Connected\Connected\obj\Debug\Connected.company_form.resources
+F:\files\sw\Connected\Connected\obj\Debug\Connected.Form1.resources
+F:\files\sw\Connected\Connected\obj\Debug\Connected.Gui.resources
+F:\files\sw\Connected\Connected\obj\Debug\Connected.Properties.Resources.resources
+F:\files\sw\Connected\Connected\obj\Debug\Connected.RegisterForm.resources
+F:\files\sw\Connected\Connected\obj\Debug\Connected.csproj.GenerateResource.cache
+F:\files\sw\Connected\Connected\obj\Debug\Connected.csproj.CoreCompileInputs.cache
+F:\files\sw\Connected\Connected\obj\Debug\Connected.csproj.CopyComplete
+F:\files\sw\Connected\Connected\obj\Debug\Connected.exe
+F:\files\sw\Connected\Connected\obj\Debug\Connected.pdb
+F:\files\sw\Connected\Connected\obj\Debug\Connected.csproj.AssemblyReference.cache
