@@ -51,7 +51,7 @@ namespace Connected
             // applicant
             // 
             this.applicant.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.applicant.Location = new System.Drawing.Point(406, 144);
+            this.applicant.Location = new System.Drawing.Point(406, 135);
             this.applicant.Name = "applicant";
             this.applicant.Size = new System.Drawing.Size(230, 60);
             this.applicant.TabIndex = 1;
@@ -81,6 +81,7 @@ namespace Connected
             this.R1.TabIndex = 3;
             this.R1.Text = "Report1";
             this.R1.UseVisualStyleBackColor = true;
+            this.R1.Click += new System.EventHandler(this.R1_Click);
             // 
             // R2
             // 
@@ -92,6 +93,7 @@ namespace Connected
             this.R2.TabIndex = 4;
             this.R2.Text = "Report2";
             this.R2.UseVisualStyleBackColor = true;
+            this.R2.Click += new System.EventHandler(this.R2_Click);
             // 
             // Gui
             // 

@@ -35,5 +35,19 @@ namespace Connected
             company_form c = new company_form();
             c.ShowDialog();
         }
+
+        private void R1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Report1 r1 = new Report1();
+            r1.ShowDialog();
+        }
+
+        private void R2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Report2 r2 = new Report2();
+            r2.ShowDialog();
+        }
     }
 }

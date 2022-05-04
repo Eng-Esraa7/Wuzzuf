@@ -10,7 +10,7 @@ Create Table Users
   MemberPhone number(12) , MemberType varchar2(20) , MemberAddress varchar2(20));
   
 Create Table Jobs
-(JobID number (10) primary key, jobName varchar2(20),  jobDescription varchar2(20),
+(JobID number (10) primary key, jobName varchar2(20),  jobDescription varchar2(200),
   companyId number (10) references Users (MemberID) , jobStatus varchar2(10));
   
 Create Table Responds
@@ -45,6 +45,8 @@ insert into Users  values
 (7, 'valeo' , 1239521 , 'valeo@yahoo.com' , '19-Jul-2007' , 5664532 , 'company', 'Alex');
 insert into Users  values
 (8, 'intercom' , 9875236 , 'intercom@yahoo.com' , '21-Jul-2001' , 12456562 , 'company', 'Giza');
+insert into Users  values
+(9, 'Huawei' , 1477777 , 'huawei@yahoo.com' , '05-Dec-2001' , 010546556 , 'company', 'Cairo/Alex');
 
 
 insert into jobs values
@@ -59,6 +61,14 @@ insert into jobs  values
 (5, 'Accountant' , 'calculate money ' , 8  , 'accept' );
 insert into jobs  values
 (6, 'lawyr' , ' help people'  , 7  , 'accept');
+insert into jobs  values
+(7, 'Ai' , 'Artificial Intelligent'  , 9  , 'accept');
+insert into jobs  values
+(8, 'Networks' , 'need applicant cant treat with networks'  , 9  , 'postpend');
+insert into jobs  values
+(9, 'Help Desk' , ' IT'  , 9  , 'accept');
+insert into jobs  values
+(10, 'Android Developer' , 'repons for bulid app' , 6 , 'accept');
 
 
 insert into Responds values
@@ -70,10 +80,23 @@ insert into Responds  values
 insert into Responds  values
 (4, 4 ,'accepted' , '28-Apr-22' );
 insert into Responds  values
-(5, 5  , 'accepted' , '25-Jul-22');
+(1, 5  , 'accepted' , '25-Jul-22');
 insert into Responds  values
-(6, 6  , 'accepted' , '17-Jul-22');
-
+(2, 5 , 'accepted' , '17-Jul-22');
+insert into Responds  values
+(2, 4  , 'accepted' , '11-Dec-22');
+insert into Responds  values
+(3, 5 , 'rejected' , '');
+insert into Responds  values
+(3, 6  , 'accepted' , '20-Aug-22');
+insert into Responds  values
+(4, 7  , 'accepted' , '20-Aug-22');
+insert into Responds  values
+(3, 8  , 'rejected' , '');
+insert into Responds  values
+(4, 9  , 'accepted' , '20-Aug-22');
+insert into Responds  values
+(1, 10  , 'rejected' , '');
 
 insert into ApplyRequest values
 (1, 1 , 'mohamed.pdf'  );
@@ -84,9 +107,15 @@ insert into ApplyRequest  values
 insert into ApplyRequest  values
 (4, 4 ,'nosa.docx' );
 insert into ApplyRequest  values
-(5, 5  , 'eman.docx' );
+(3, 5  , 'eman.docx' );
 insert into ApplyRequest  values
-(6, 6  , 'ibrahim.pptx' );
+(2, 6  , 'ibrahim.pptx' );
+insert into ApplyRequest  values
+(5, 7  , 'ibrahim.pptx' );
+insert into ApplyRequest  values
+(3, 8  , 'ibrahim.pptx' );
+insert into ApplyRequest  values
+(2, 10  , 'ibrahim.pptx' );
 
 
 insert into Feedback values
@@ -98,9 +127,25 @@ insert into Feedback  values
 insert into Feedback  values
 (4, 4 ,'bad job' );
 insert into Feedback  values
-(5, 5  , ' not recommend job ' );
+(1, 5  , ' not recommend job ' );
 insert into Feedback  values
-(6, 6  , 'recommend applicant ' );
+(2, 6  , 'recommend' );
+insert into Feedback  values
+(3, 7 , 'Loved it' );
+insert into Feedback  values
+(4, 8 , 'Goood' );
+insert into Feedback  values
+(1, 9 , 'interested' );
+insert into Feedback  values
+(1, 10 , 'bad job' );
+insert into Feedback  values
+(2, 1 , 'very nice ' );
+insert into Feedback  values
+(4, 10 , 'Gameeed!' );
+insert into Feedback  values
+(6, 5 , 'loved ' );
+insert into Feedback  values
+(6, 4, 'baaaaad' );
 
 
 insert into addToFavorate values
@@ -110,11 +155,11 @@ insert into addToFavorate values
 insert into addToFavorate  values
 (2, 1  );
 insert into addToFavorate  values
-( 3, 2  );
+( 3, 5  );
 insert into addToFavorate  values
-(5, 6 );
+(4, 6 );
 insert into addToFavorate  values
-(6, 5 );
+(4, 10 );
 
 
 commit;
