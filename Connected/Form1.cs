@@ -205,6 +205,7 @@ namespace Connected
                     {
                         MessageBox.Show("Applied Before");
                     }
+
                     else
                     {
                         OracleCommand cmd = new OracleCommand();
